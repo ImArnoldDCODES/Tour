@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tour</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+    <div class="navbar">
+        <logo data-aos="fade-right">
+            <img src="images/logo.png" >
+         <h2>Tour</h2>
+        </logo>
+
+        <ul  data-aos="fade-left" data-aos-delay="700">
+            <li><a href="#">Home</a></li>
+            <li><a style="color: rgb(167, 159, 159);" href="#">Product</a></li>
+            <li><a style="color: rgb(167, 159, 159);" href="#">Resources</a></li>
+            <li><a style="color: rgb(167, 159, 159);" href="#">Contact</a></li>
+            <li><a style="color: rgb(167, 159, 159);" href="#">Blog</a></li>
+        </ul>
+
+          <btn>
+        <div class="btn">Login</div>
+        <div class="btn1">Sign Up</div>
+        </btn>
+    </div>
+
+    <div class="content" data-aos="fade-up-left" data-aos-delay="500">
+       <h1  class="darkmode-ignore">Explore a   <br> new world.</h1>
+       <h3>No matter where in the world you want to go, we <br> help you get there.</h3>
+       <!-- <img src="images/dash.png"> -->
+
+       <div class="btn3">Explore Now</div>
+    </div>
+         <div data-aos="fade-down-right"  data-aos-delay="300" class="image">
+              <img src="images/images(1).jpeg">
+            </div>
+
+
+            <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+            <script>
+              AOS.init();
+            </script>
+            <script src="https://code.jquery.com/pep/0.4.3/pep.js"></script>
+            <script src="index.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
+<script>
+  function addDarkmodeWidget() {
+    new Darkmode().showWidget();
+  }
+  window.addEventListener('load', addDarkmodeWidget);
+
+const options = {
+
+  bottom: '64px', // default: '32px'
+  right: 'unset', // default: '32px'
+  left: '32px', // default: 'unset'
+  time: '0.5s', // default: '0.3s'
+  mixColor: '#fff', // default: '#fff'
+  backgroundColor: '#000',  // default: '#fff'
+  buttonColorDark: '#100f2c',  // default: '#100f2c'
+  buttonColorLight: '#fff', // default: '#fff'
+  saveInCookies: true, // default: true,
+  label: '🌓', // default: ''
+  autoMatchOsTheme: true // default: true
+}
+
+const darkmode = new Darkmode(options);
+darkmode.showWidget();
+</script>
+</body>
+</html>
