@@ -4,9 +4,10 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-   background-color: whitesmoke;
 }
 body{
+    background-color: #fff;
+    color: #000;
     cursor: pointer;
     font-family: 'Raleway', sans-serif;
 }
@@ -18,14 +19,18 @@ logo{
     position: absolute;
     padding: 70px;
     margin-left: 50px;
-    color: #000;
 }
-
+ .darkmode--activated logo h2{
+    color: #fff;
+} 
 logo h2{
     color: black;
     font-size: 40px;
-    position: absolute;
+    margin-top: -46px;
 }
+logo img{
+    margin-left: -60px;
+} 
 
 .navbar ul{
     position: relative;
@@ -33,7 +38,7 @@ logo h2{
     flex-direction: row;
     padding: 30px;
     float: right;
-    margin-right: 230px;
+    margin-right: 270px;
 }
 .navbar ul li{
     list-style: none;
@@ -43,169 +48,99 @@ logo h2{
 .navbar ul li a{
     font-size: 20px;
     display: inline-block;
-    color:black ;
-    font-weight: 600;
+    color: black;
+    font-weight: 6s00;
     text-decoration: none;
 }
-.navbar ul li a:hover{
-  color: #000;
-  font-size: 25px;
+btn{
+    display: flex;
+    flex-direction: row;
+    float: right;
+    margin-right: -700px;
+    margin-top: 83px;
 }
+ .darkmode--activated btn{
+    color: white;
+} 
+.darkmode--activated btn .btn1:hover{
+    border:2px white solid ;
+} 
+
+
+btn .btn{
+    margin-right: 20px;
+    font-weight: 700;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+btn .btn1{
+    margin-top: -13px;
+    margin-right: 30px;
+    font-weight: 700;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border: 2px black solid;
+    padding: 12px 20px 12px 20px;
+    border-radius: 30px;
+}
+btn .btn1:hover{
+    background-color: black;
+    color: #fff;
+}
+
 .content{
-    margin-top: 260px;
-    margin-left: 120px;
     position: absolute;
+    margin-top: 90px;
+    padding: 140px;
+}
+.content h1{
+    font-size: 6.2em;
+}
+
+ .darkmode--activated .content h1{
+    isolation: isolate;
+    color: #fff;
 }
 .content h3{
-    font-weight: 800;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    color: rgb(119, 111, 111);
 }
-.content h3 u{
-    margin-top: 15px;
-    margin-left: 14px;
-    font-size: 30px;
+.content img{
+    position: absolute;
+    display: flex;
+    margin-top: -11pc;
+}
+.btn3{
+    margin-top: 25px;
+    border: 2px rgb(113, 205, 236) solid;
+    border-radius: 30px;
+    margin-right: 400px;
+    padding: 13px;
+    color: rgb(113, 205, 236);
+    font-weight: 700;
+}
+
+.image{
     position: absolute;
 }
-.content h3 li{
-    display: inline-block;
-    flex-direction: row;
-    list-style: none;
+.image img{
+    margin-left: 700px;
+    margin-top: 60px;
+    animation: play 2s linear infinite;
 }
-
-.content h3 li img{
-    width: 40px;
-    margin-top: 80px;
-    margin-left: 10px;
-}
-
-.images{
-   display:flex;
-   width: 10%;
-   height: 60vh;
-   border-radius: 50%;
-   position: absolute;
-   margin-top: 10pc;
-   margin-left: 700px;
-   max-width: 10%;
- max-height: 100%;
-} 
-.images img:hover{
-    /* animation-name: round;
-    animation-duration: 5s infinite; */
-    border-radius: 0%;
-    animation: infinite round 5s ;
-}
-
-@keyframes round {
-    from{
-        border-radius: 0%;
+@keyframes play {
+    0%{
+        margin-top: 150px;
     }
-    to{
-        border-radius: 50%;
-        border: 1px black solid ;
-    }
-}
-.wrap{
-    margin-left: 15px;
-}
-
-
-  /* The typing effect */
-  @keyframes typing {
-    from { width: 0 }
-    to { width: 100% }
-  }
-  
-  /* The typewriter cursor effect */
-  @keyframes blink-caret {
-    from, to { border-color: transparent }
-    50% { border-color: orange; }
-  }
-  /* [data-aos][data-aos][data-aos-delay="500"].aos-animate, body[data-aos-delay="500"] [data-aos].aos-animate{
-      margin-left: 50px;
-  } */
-
-  @media screen and (max-width: 450px) {
-    .container {
-        display: inline-block;
-        cursor: pointer;
-        margin-left: 270px;
-        position: absolute;
-        margin-top: 80px;
-    }
-    
-    .bar1, .bar2, .bar3 {
-        width: 35px;
-        height: 5px;
-        background-color: #333;
-        margin: 6px 0;
-        transition: 0.4s;
-        color: #000;
-    }
-    
-    .change .bar1 {
-        -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
-        transform: rotate(-45deg) translate(-9px, 6px) ;
-    }
-    
-    .change .bar2 {opacity: 0;}
-    
-    .change .bar3 {
-        -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
-        transform: rotate(45deg) translate(-8px, -8px) ;
-    }
-    
-    .navbar ul li{
-        display: block;
-        z-index: 1;
-        text-overflow: ellipsis;
-    }
-    .mobile{
-        display: block;
-        background-color: whitesmoke;
-        margin-top: 30px;
-    }
-    .mobile li a{
-        color: #fff;
-    }
-    logo{
-        margin-left: -10px;
-    }
-    .content h3{
-        margin-left: -20px;
+    50%{
         margin-top: 160px;
-        position: relative;
     }
-    .content h3 u{
-        position: absolute;
+    100%{
+        margin-top: 173px;
     }
-    .images{
-        display: block;
-    
-    }
-    .images img{
-        height: 10vh;
-        margin-left: -555px;
-        border-radius: 50%;
-        margin-top: 50px;
-    }
-    .wrap{
-        word-break: break-all;
-        width: 90%;
-        display: block;
-        margin-top: 70px;
-        margin-left: -10px;
-        position: absolute;
-        z-index: 2;
-    }
-    .content h2 p{
-        width: 100%;
-    }
-  }
+}
 
-  @media screen and (max-width: 370px) {
-    .mobile li a{
-        display: block;
-        background-color: whitesmoke;
-        margin-right: -28px;
-    }
-  }
+
+canvas { position: fixed; touch-action: none; opacity: 0.2; margin-left: -280px;}

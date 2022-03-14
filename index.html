@@ -4,55 +4,42 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fortwin</title>
+    <title>Tour</title>
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
     <div class="navbar">
         <logo data-aos="fade-right">
-         <h2>I'm Fortwin.</h2>
+            <img src="images/logo.png" >
+         <h2>Tour</h2>
         </logo>
 
-   
-        <ul class="mobile"  data-aos="fade-left" data-aos-delay="700">
-            <li><a href="https://twitter.com/Fortwin___?s=20&t=8HT_2qGlPEFxVr-fljIGig">Twitter</a></li>
-            <li><a href="https://www.instagram.com/fortwin__/">Instagram</a></li>
-            <li><a href="https://www.linkedin.com/in/fortwin-hamzat/">Linkedin</a></li>
-            <li><a href="https://github.com/Fortwinhamz">Github</a></li>
+        <ul  data-aos="fade-left" data-aos-delay="700">
+            <li><a href="#">Home</a></li>
+            <li><a style="color: rgb(167, 159, 159);" href="#">Product</a></li>
+            <li><a style="color: rgb(167, 159, 159);" href="#">Resources</a></li>
+            <li><a style="color: rgb(167, 159, 159);" href="#">Contact</a></li>
+            <li><a style="color: rgb(167, 159, 159);" href="#">Blog</a></li>
         </ul>
-      
-    </div>
 
-    <div class="container" onclick="myFunction(this)">
-      <div class="bar1"></div>
-      <div class="bar2"></div>
-      <div class="bar3"></div>
+          <btn>
+        <div class="btn">Login</div>
+        <div class="btn1">Sign Up</div>
+        </btn>
     </div>
-
 
     <div class="content" data-aos="fade-up-left" data-aos-delay="500">
-     <h2>
-      <p href="" class="typewrite" data-period="2000" data-type='[ "Im, a Frontend Developer", "who  takes herself out of this world", "and build amazing things." ]'>
-        <span class="wrap"></span>
-     </p>
-    </h2>
-    
-     <h3>
-       <u> My Stack </u>
-       <li><img src="images/html.png"></li> 
-       <li><img src="images/css-3.png"></li>
-       <li><img src="images/js.png"></li>
-       <li><img src="images/structure.png"></li>
-     </h3>
+       <h1  class="darkmode-ignore">Explore a   <br> new world.</h1>
+       <h3>No matter where in the world you want to go, we <br> help you get there.</h3>
+       <!-- <img src="images/dash.png"> -->
 
+       <div class="btn3">Explore Now</div>
     </div>
+         <div data-aos="fade-down-right"  data-aos-delay="300" class="image">
+              <img src="images/images(1).jpeg">
+            </div>
 
-      <div class="images"  data-aos="fade-up-right" data-aos-delay="500">
-        <img src="./her (2).jpeg" alt="Avatar">
-      </div>
-      
- 
 
             <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
             <script>
@@ -60,8 +47,30 @@
             </script>
             <script src="https://code.jquery.com/pep/0.4.3/pep.js"></script>
             <script src="index.js"></script>
-            <script>
+            <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
+<script>
+  function addDarkmodeWidget() {
+    new Darkmode().showWidget();
+  }
+  window.addEventListener('load', addDarkmodeWidget);
 
-            </script>
-       </body>
+const options = {
+
+  bottom: '64px', // default: '32px'
+  right: 'unset', // default: '32px'
+  left: '32px', // default: 'unset'
+  time: '0.5s', // default: '0.3s'
+  mixColor: '#fff', // default: '#fff'
+  backgroundColor: '#000',  // default: '#fff'
+  buttonColorDark: '#100f2c',  // default: '#100f2c'
+  buttonColorLight: '#fff', // default: '#fff'
+  saveInCookies: true, // default: true,
+  label: '🌓', // default: ''
+  autoMatchOsTheme: true // default: true
+}
+
+const darkmode = new Darkmode(options);
+darkmode.showWidget();
+</script>
+</body>
 </html>
